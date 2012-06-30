@@ -5,7 +5,17 @@
     %link{:rel => :stylesheet, :type => "text/css", :href => "css/application.css"}
 
   %body
-    = yield
+    .navbar
+      .navbar-inner
+        .container
+          %a.brand{:href => "#suites"} W3C Test Framework JSON API Wrapper
+          %ul.nav
+            %li.active
+              %a{:href => "#suites"} Test Suites
+            %li.active
+              %a{:href => "#agents"} User Agents
+    #inner_body
+      = yield
     %script{:src => "javascript/jquery.js"}
     %script{:src => "javascript/underscore.js"}
     %script{:src => "javascript/application.js"}
