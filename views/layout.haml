@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %link{:rel => :stylesheet, :type => "text/css", :href => "css/bootstrap.css"}
+    %link{:rel => :stylesheet, :type => "text/css", :href => "css/application.css"}
+
+  %body
+    = yield
+    %script{:src => "javascript/jquery.js"}
+    %script{:src => "javascript/underscore.js"}
+    %script{:src => "javascript/application.js"}
